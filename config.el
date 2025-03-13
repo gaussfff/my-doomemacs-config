@@ -9,7 +9,7 @@
 
 ;; enable paredit
 (use-package! paredit
-  :hook ((emacs-lisp-mode lisp-mode lisp-interaction-mode clojure-mode) . enable-paredit-mode))
+              :hook ((emacs-lisp-mode lisp-mode lisp-interaction-mode clojure-mode) . enable-paredit-mode))
 
 ;; set dir for org files
 (setq org-directory "~/org/")
@@ -22,6 +22,7 @@
 
 ;; dosen't ask when quiting from emacs
 (setq confirm-kill-emacs nil)
+(setq confirm-kill-processes nil)
 
 ;; fullscreen on startup
 (add-to-list 'window-setup-hook #'toggle-frame-maximized)
